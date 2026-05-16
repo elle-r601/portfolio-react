@@ -1,7 +1,7 @@
 [
   {
     "title": "Healthdirect",
-    "image": "./src/assets/healthdirect_logo.png",
+    "image": "/src/assets/healthdirect_logo.png",
     "desc": "As the sole UX Designer on the Video Call team, I was tasked with evaluating the UX and UI of the Video Call Resource Centre. I collaborated with content producers and developers to design a help centre that is aesthetically pleasing and easy to navigate, especially for those who are not digital literate. The new resource centre was designed using Figma and implemented in their Helpjuice Knowledge Base using HTML, CSS and jQuery. Visit the website at: https://help.vcc.healthdirect.org.au/",
     "video": ""
   },
