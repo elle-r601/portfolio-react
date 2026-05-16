@@ -10,7 +10,7 @@ function About() {
             </div>
             <div className="about-content">
             
-                <img id="photo-of-me" src="/src/assets/photo-of-me.JPG"></img>
+                <img id="photo-of-me" src="/images/photo-of-me.JPG"></img>
         
                 <div id="about-me-section">
                     <p id="about-me-para">A creative and aspiring software developer specialising in <span className="emp">Interaction Design</span> and <span className="emp">Information Security</span>. 
