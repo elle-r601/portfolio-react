@@ -1,4 +1,8 @@
+import ToggleSwitch from "./ToggleSwitch";
+import { useState } from 'react'
+
 function Navbar() {
+    const [toggled, setToggled] = useState(false);
     const d = new Date();
     const mon = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const week = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
@@ -23,6 +27,7 @@ function Navbar() {
             <a href="#" onClick={handleClick} className="nav" id="portfolio">[portfolio]</a>
         </div>
         <div className="header-col2">
+            {/* <ToggleSwitch isToggled={toggled} onToggle={() => setToggled(!toggled)} /> */}
             <p>42%</p>
             <span className="material-symbols-outlined">battery_android_3</span>
             <p id="date">{string}</p>

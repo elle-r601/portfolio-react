@@ -196,3 +196,31 @@ p {
 .section {
   margin: 15vh 0 50vh 0;
 }
+
+.toggle-switch {
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  background-color: var(--grey-blue);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border: 2px solid var(--darker-blue);
+  transition: background-color 0.2s ease-in-out;
+}
+.switch {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  transition: transform 0.2s ease;
+
+    &.on {
+      transform: translateX(30px);
+    }
+
+    &.off {
+      transform: translateX(0);
+    }
+}
