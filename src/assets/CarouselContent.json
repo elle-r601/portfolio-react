@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Healthdirect",
+    "image": "/src/assets/healthdirect_logo.png",
+    "desc": "As the sole UX Designer on the Video Call team, I was tasked with evaluating the UX and UI of the Video Call Resource Centre. I collaborated with content producers and developers to design a help centre that is aesthetically pleasing and easy to navigate, especially for those who are not digital literate. The new resource centre was designed using Figma and implemented in their Helpjuice Knowledge Base using HTML, CSS and jQuery.",
+    "video": ""
+  },
+  {
+    "title": "Emart",
+    "image": "/src/assets/emart.png",
+    "desc": "This website was made for my Programming on the Internet class. It was implemented using HTML, CSS, PHP, SQL and JavaScript.\nIt allows users to search for products using either the search bar or the navigation menu.\nThere is a pop-up cart that displays the items currently in the cart.\nThis also links to the full cart page, which allows the user to check out.\nThe checkout page requires the user to input their information before they can make a purchase.\nIt has a working database that adjusts its stock whenever an item is bought.\nIt also has error preventions, the stock of every item is checked before the purchase is authorised.\nA simple design system was also created for the company website.",
+    "video": "https://youtu.be/Jig4kTtPEr8"
+  },
+  {
+    "title": "The Car Company",
+    "image": "/src/assets/the-car-company.png",
+    "desc": "This website was also made for my Programming on the Internet class.\nIt was developed using HTML, CSS, JavaScript, jQuery, PHP, SQL and AJAX techniques. It was hosted with AWS.\nThe user can rent only one car at a time.\nThey can search through the cars based on their type, brand and/or the search bar.\nThe reservation page prompts the user to input their personal information along with the rental period to calculate the total price.\nWhen they click submit, the information is added to the database with status 'pending' until the user confirms the order.\nIt also has error preventions in place to make sure two people cannot reserve the same vehicle.",
+    "video": "https://youtu.be/EyFTxZGoK00"
+  },
+  {
+    "title": "PacMan Clone",
+    "image": "/src/assets/pacman.png",
+    "desc": "This Pac-Man game was developed for my game development class.\nIt was developed in Unity using C#.\nPictured here is the start scene. \nThe start scene has buttons that correspond to level 1 and 2 with scores that automatically update when a level has been completed.\nIt also features an animated border of the cat (Pac-Man) circling the screen.\nAll of the assets were created using Piskel, a free online sprite editor.",
+    "video": ""
+  }
+]
