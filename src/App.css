@@ -207,25 +207,29 @@ a.nav {
   background: var(--grey-blue);
 
   .carousel-col {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
 
     .carousel-nav {
       background: var(--darker-blue);
-      width: 20%;
       padding: 1rem;
       border-right: 4px solid var(--border-blue);
       
       a {
-        display: block;
+        display: flex;
         color: black;
         font-family: "JetBrains Mono", monospace;
         text-decoration: none;
-        padding: 8px 0;
+        padding: 8px 0px;
+
+        span {
+          margin-right: 10px;
+        }
 
         &:hover {
-          text-decoration: underline;
+          color: var(--grey-blue);
         }
+        
       }
     }
   }

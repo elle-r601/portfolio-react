@@ -20,7 +20,7 @@ function CarouselWidget() {
                   {data.map((item, index) => (
                     <a href="#" 
                     onClick={(e) => { e.preventDefault(); setCurrentIndex(index); }} 
-                    key={index}>
+                    key={index}><span className="material-symbols-outlined">folder</span>
                       {item.title}</a>
                   ))}
               </div>
