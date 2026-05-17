@@ -204,6 +204,32 @@ a.nav {
 }
 
 .carousel-widget {
+  background: var(--grey-blue);
+
+  .carousel-col {
+    display: flex;
+    flex-direction: row;
+
+    .carousel-nav {
+      background: var(--darker-blue);
+      width: 20%;
+      padding: 1rem;
+      border-right: 4px solid var(--border-blue);
+      
+      a {
+        display: block;
+        color: black;
+        font-family: "JetBrains Mono", monospace;
+        text-decoration: none;
+        padding: 8px 0;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
   #buttons {
     display: flex;
     flex-direction: row;

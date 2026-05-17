@@ -5,18 +5,6 @@ import data from '/src/assets/CarouselContent.json';
 function CarouselWidget() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePreviousClick = () => {
-    console.log("here1");
-    setCurrentIndex(
-      currentIndex === 0 ? data.length - 1 : currentIndex - 1
-    );
-  };
-
-  const handleNextClick = () => {
-    console.log("here2");
-    setCurrentIndex((currentIndex + 1) % data.length);
-  };
-
   return (
     <section className="section" id="portfolio-section">
       <div className="carousel-widget">
@@ -25,6 +13,16 @@ function CarouselWidget() {
             <div key={index}>
               <div className="carousel-header">
                 <h2>{item.title}</h2>
+              </div>
+
+            <div className='carousel-col'>
+              <div className='carousel-nav'>
+                  {data.map((item, index) => (
+                    <a href="#" 
+                    onClick={(e) => { e.preventDefault(); setCurrentIndex(index); }} 
+                    key={index}>
+                      {item.title}</a>
+                  ))}
               </div>
 
               <div className="carousel-content">
@@ -40,18 +38,10 @@ function CarouselWidget() {
                 </div>
               </div>
             </div>
+            </div>
           </div>
         )}
 
-        <div id="buttons">
-          <div onClick={handlePreviousClick} className="action">
-              Previous
-          </div>
-          <div onClick={handleNextClick} className="action">
-              Next
-          </div>
-
-        </div>
       </div>
     </section>
     
