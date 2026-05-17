@@ -20,9 +20,20 @@ function CarouselWidget() {
                   {data.map((item, index) => (
                     <a href="#" 
                     onClick={(e) => { e.preventDefault(); setCurrentIndex(index); }} 
-                    key={index}><span className="material-symbols-outlined">folder</span>
-                      {item.title}</a>
+                    key={index}
+                    className={ currentIndex === index ? 'current' : ''}
+                    >
+                    {item.title}
+                    </a>
                   ))}
+
+                  <a href={item.demo || "#"} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={`action alt ${!item.demo ? 'disabled' : ''}`}
+                  onClick={!item.demo ? (e) => e.preventDefault() : undefined}
+                  >Demo
+                  </a>
               </div>
 
               <div className="carousel-content">

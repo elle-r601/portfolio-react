@@ -82,6 +82,7 @@ a.nav {
     justify-content: flex-start;
     align-items: baseline;
     gap: 2rem;
+
   }
 
   .header-col2 {
@@ -95,6 +96,10 @@ a.nav {
         font-size: 2rem;
         color: black;
     }
+
+    .logo.alt {
+      display: none;
+    }
   }
 
   &:hover {
@@ -102,24 +107,35 @@ a.nav {
   }
 
   @media (max-width: 768px) {
-    width: fit-content;
-    justify-content: center;
+    width: 85%;;
 
     .header-col2 {
       display: none;
     }
 
     .header-col1 {
-      width: fit-content;
+      width: stretch;
+      justify-content: space-evenly;
       align-items: center;
-      gap: 3vw;
+      gap: 2vw;
 
-      .logo {
-        width: fit-content;
+      a {
+        font-size: 1rem;
       }
 
-      h2, p {
-        font-size: 16px;
+      .logo {
+        h2 {
+          display: none;
+        }
+      }
+
+      .logo.alt {
+        display: block;
+        background-image: url(/images/elle.png);
+        width: 80px;
+        height: 80px;
+        background-size: cover; 
+        background-repeat: no-repeat;
       }
     }
   }
@@ -177,18 +193,38 @@ a.nav {
 .action {
   background: var(--light-blue);
   box-shadow: var(--darker-blue) 4px 4px 0px 2px, #00000040 0px 0px 5px 0px inset ;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem !important;
   width: fit-content;
   border-radius: 8px;
-  color: black;
+  color: black !important;
   text-decoration: none;
-  font-family: "Silkscreen", sans-serif;
+  font-family: "Silkscreen", sans-serif !important;
   transition: .3s ease;
 
   &:hover {
     background: var(--border-blue);
     transform: scale(1.1);
     cursor: pointer;
+  }
+
+  &.alt {
+    background: var(--border-blue);
+    box-shadow: var(--light-blue) 4px 4px 0px 2px, #00000040 0px 0px 5px 0px inset ;
+    margin: 2rem auto;
+
+    &:hover {
+      background: #b8d7f4;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      opacity: .5;
+    }
+
+    &::before {
+      content: "" !important;
+      margin: 0 !important;
+    }
   }
 }
 
@@ -237,6 +273,7 @@ a.nav {
       background: var(--darker-blue);
       padding: 1rem;
       border-right: 4px solid var(--border-blue);
+      box-shadow: #0000004D 0px 0px 6px 4px inset ;
       
       a {
         display: flex;
@@ -245,12 +282,20 @@ a.nav {
         text-decoration: none;
         padding: 8px 0px;
 
-        span {
+        &::before {
+          content: "\e2c7";
+          font-family: 'Material Symbols Outlined';
           margin-right: 10px;
         }
 
-        &:hover {
+        &:hover, &.current {
           color: var(--grey-blue);
+
+          &::before {
+            content: "\e2c8";
+            font-family: 'Material Symbols Outlined';
+          }
+          
         }
         
       }

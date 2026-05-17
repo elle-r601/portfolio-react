@@ -21,6 +21,6 @@
     "title": "PacMan Clone",
     "image": "/images/pacman.png",
     "desc": "This Pac-Man game was developed for my game development class.\nIt was developed in Unity using C#.\nPictured here is the start scene. \nThe start scene has buttons that correspond to level 1 and 2 with scores that automatically update when a level has been completed.\nIt also features an animated border of the cat (Pac-Man) circling the screen.\nAll of the assets were created using Piskel, a free online sprite editor.",
-    "demo": "#"
+    "demo": ""
   }
 ]
