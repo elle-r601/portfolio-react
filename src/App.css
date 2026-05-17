@@ -164,9 +164,11 @@ a.nav {
   color: black;
   text-decoration: none;
   font-family: "Silkscreen", sans-serif;
+  transition: .3s ease;
 
   &:hover {
     background: var(--border-blue);
+    transform: scale(1.1);
     cursor: pointer;
   }
 }
@@ -191,6 +193,7 @@ a.nav {
     p {
       margin: 1rem auto;
       width: 80%;
+      text-align: justify;
     }
   }
 

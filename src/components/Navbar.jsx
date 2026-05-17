@@ -18,11 +18,16 @@ function Navbar() {
         window.scrollTo({ top, behavior: 'smooth' });
     }
 
+    const scrollTop = (e) => {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
 
   return (
     <div className="header">
         <div className="header-col1">
-            <a href="#" className="logo"><h2>Eleora Rizkalla</h2></a>
+            <a href="#" onClick={scrollTop} className="logo" id="header"><h2>Eleora Rizkalla</h2></a>
             <a href="#" onClick={handleClick} className="nav" id="about">[about]</a>
             <a href="#" onClick={handleClick} className="nav" id="portfolio">[portfolio]</a>
         </div>
