@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import data from '/src/assets/CarouselContent.json';
+import "./Widget.css"
 
 function CarouselWidget() {
   const [currentIndex, setCurrentIndex] = useState(0);

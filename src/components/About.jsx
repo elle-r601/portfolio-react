@@ -1,3 +1,5 @@
+import "./Widget.css"
+
 function About() {
     const openLinked = () => {
         window.open("https://www.linkedin.com/in/eleora-rizkalla-08b7431b3/", '_blank', 'noopener');

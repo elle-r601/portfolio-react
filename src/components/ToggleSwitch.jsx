@@ -1,13 +1,27 @@
-import React, { useState } from 'react';
+import "./ToggleSwitch.css"
 
-function ToggleSwitch({ isToggled, onToggle }) {
-    const toggle = ({ isToggled, onToggle }) 
+const ToggleSwitch = ({ isOn, handleToggle }) => {
+
+  const bg = useRef(document.getElementById('root'));
+  
     
   return (
-    <div className="toggle-switch" onClick={onToggle}>
-        <div className={`switch ${isToggled ? 'on' : 'off'}`}>
-        </div>
-    </div>
-  )
-}
+     <>
+      <input
+        checked={isOn}
+        onChange={handleToggle}
+        className="switch-checkbox"
+        id={`switch`}
+        type="checkbox"
+      />
+      <label
+        style={{ background: isOn && '#06D6A0' }}
+        className="switch-label"
+        htmlFor={`switch`}
+      >
+        <span className={`switch-button`} />
+      </label>
+    </>
+  );
+};
 export default ToggleSwitch

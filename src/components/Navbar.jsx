@@ -1,8 +1,8 @@
 import ToggleSwitch from "./ToggleSwitch";
 import { useState } from 'react'
+import "./NavBar.css"
 
 function Navbar() {
-    const [toggled, setToggled] = useState(false);
     const d = new Date();
     const mon = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const week = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
@@ -23,18 +23,22 @@ function Navbar() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
+    const [value, setValue] = useState(false);
 
   return (
     <div className="header">
         <div className="header-col1">
-            <a href="#" onClick={scrollTop} className="logo"><h2>Eleora Rizkalla</h2>
-                <a href="#" onClick={scrollTop} className="logo alt"></a>
-            </a>
+            <div href="#" onClick={scrollTop} className="logo"><h2>Eleora Rizkalla</h2>
+                <div href="#" onClick={scrollTop} className="logo alt"></div>
+            </div>
             <a href="#" onClick={handleClick} className="nav" id="about">[about]</a>
             <a href="#" onClick={handleClick} className="nav" id="portfolio">[portfolio]</a>
         </div>
         <div className="header-col2">
-            {/* <ToggleSwitch isToggled={toggled} onToggle={() => setToggled(!toggled)} /> */}
+            {/* <ToggleSwitch
+                isOn={value}
+                handleToggle={() => setValue(!value)}
+            /> */}
             <p>42%</p>
             <span className="material-symbols-outlined">battery_android_3</span>
             <p id="date">{string}</p>
