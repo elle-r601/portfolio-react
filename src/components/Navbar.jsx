@@ -1,6 +1,6 @@
 import ToggleSwitch from "./ToggleSwitch";
 import { useState } from 'react'
-import "./NavBar.css"
+import "./Navbar.css"
 
 function Navbar() {
     const d = new Date();
