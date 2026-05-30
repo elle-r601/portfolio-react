@@ -11,7 +11,7 @@ function CarouselWidget() {
       <div className="carousel-widget">
         {data.map((item, index) => 
           <div className={ currentIndex === index ? 'block' : 'hidden'}>
-            <div key={index}>
+            <div key={"title_" + index}>
               <div className="carousel-header">
                 <h2>{item.title}</h2>
               </div>

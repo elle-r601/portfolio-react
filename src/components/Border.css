@@ -1,0 +1,58 @@
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ani-border-outer {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    
+    .inner {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        margin: 2px;
+        background: #fff;
+        padding: 10px;
+
+        p {
+            color: black;
+        }
+        
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        background: #FD1D1D;
+        background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0%, rgba(252, 176, 69, 1) 100%);
+        height: 300px;
+        width: 200px;
+        transform: translate(0);
+        position: absolute;
+        animation: rotate 1s linear forwards infinite;
+        z-index: 0;
+        top: 50%;
+        transform-origin: top center;
+    }
+
+}
+
+#l1 {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    width: 200px;
+    opacity: .5;
+    
+}

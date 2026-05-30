@@ -2,7 +2,7 @@ import ToggleSwitch from "./ToggleSwitch";
 import { useState } from 'react'
 import "./Navbar.css"
 
-function Navbar() {
+function Navbar({isOn, handleToggle}) {
     const d = new Date();
     const mon = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const week = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
@@ -11,10 +11,14 @@ function Navbar() {
     const string = day + " " + d.getDate().toString() + " " + monthDay.toString();
 
     const handleClick = (e) => {
+        console.log("hello");
         e.preventDefault();
         const id = e.target.id;
+  
         const element = document.getElementById(id + '-section');
+        console.log(element)
         const top = element.getBoundingClientRect().top + window.scrollY - 140; 
+        console.log(top);
         window.scrollTo({ top, behavior: 'smooth' });
     }
 
@@ -23,7 +27,6 @@ function Navbar() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
-    const [value, setValue] = useState(false);
 
   return (
     <div className="header">
@@ -35,13 +38,11 @@ function Navbar() {
             <a href="#" onClick={handleClick} className="nav" id="portfolio">[portfolio]</a>
         </div>
         <div className="header-col2">
-            {/* <ToggleSwitch
-                isOn={value}
-                handleToggle={() => setValue(!value)}
-            /> */}
-            <p>42%</p>
-            <span className="material-symbols-outlined">battery_android_3</span>
             <p id="date">{string}</p>
+            <ToggleSwitch
+                isOn={isOn}
+                handleToggle={handleToggle}
+            />
         </div>
         
     </div>

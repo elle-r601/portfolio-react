@@ -46,7 +46,7 @@ a.nav {
   border-radius: 15px;
   width: 95%;
   box-shadow: var(--shadow);
-  margin: 10px auto;
+  margin: auto;
   transition: .2s ease;
 
   .header-col1{

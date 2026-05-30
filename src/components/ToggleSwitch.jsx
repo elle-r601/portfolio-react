@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import "./ToggleSwitch.css"
 
 const ToggleSwitch = ({ isOn, handleToggle }) => {
@@ -15,7 +16,6 @@ const ToggleSwitch = ({ isOn, handleToggle }) => {
         type="checkbox"
       />
       <label
-        style={{ background: isOn && '#06D6A0' }}
         className="switch-label"
         htmlFor={`switch`}
       >
