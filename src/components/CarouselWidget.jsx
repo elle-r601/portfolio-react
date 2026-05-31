@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import data from '/src/assets/CarouselContent.json';
 import "./Widget.css"
+import Button from './Button'
 
 function CarouselWidget() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,19 +23,17 @@ function CarouselWidget() {
                     <a href="#" 
                     onClick={(e) => { e.preventDefault(); setCurrentIndex(index); }} 
                     key={index}
-                    className={ currentIndex === index ? 'current' : ''}
+                    className={`portfolio-links ${currentIndex === index ? 'current' : ''}`}
                     >
                     {item.title}
                     </a>
                   ))}
 
-                  <a href={item.demo || "#"} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className={`action alt ${!item.demo ? 'disabled' : ''}`}
-                  onClick={!item.demo ? (e) => e.preventDefault() : undefined}
-                  >Demo
-                  </a>
+                  <Button 
+                  id="portfolio-link-buttons"
+                  label={item.title + " Demo"}
+                  url={item.demo}
+                  />
               </div>
 
               <div className="carousel-content">

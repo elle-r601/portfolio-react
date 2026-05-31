@@ -2,9 +2,15 @@ import "./Widget.css"
 import Button from './Button'
 
 function About() {
-    const openLinked = () => {
-        window.open("https://www.linkedin.com/in/eleora-rizkalla-08b7431b3/", '_blank', 'noopener');
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        const id = e.target.id;
+        const element = document.getElementById(id + '-section');
+        const top = element.getBoundingClientRect().top + window.scrollY - 140; 
+        window.scrollTo({ top, behavior: 'smooth' });
     }
+    
   return (
     <section className="section" id="about-section">
         <div className="about-widget">
@@ -20,15 +26,20 @@ function About() {
                         I am enthusiastic about web development and game design. 
                     </p>
                     <div id="buttons">
-                        <div onClick={openLinked} className="action">
-                            LinkedIn
-                        </div>
+                        <Button 
+                            id="linkedin"
+                            label="Linkedin"
+                            url="https://www.linkedin.com/in/eleora-rizkalla-08b7431b3/"
+                        />
 
                     </div>
 
                 </div>
             </div>
         </div>
+
+        <span id="portfolio" class="material-symbols-outlined arrow-down" onClick={handleClick}>arrow_downward_alt</span>
+
     </section>
   )
 }

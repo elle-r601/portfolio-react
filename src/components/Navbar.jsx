@@ -11,14 +11,10 @@ function Navbar({isOn, handleToggle}) {
     const string = day + " " + d.getDate().toString() + " " + monthDay.toString();
 
     const handleClick = (e) => {
-        console.log("hello");
         e.preventDefault();
         const id = e.target.id;
-  
         const element = document.getElementById(id + '-section');
-        console.log(element)
         const top = element.getBoundingClientRect().top + window.scrollY - 140; 
-        console.log(top);
         window.scrollTo({ top, behavior: 'smooth' });
     }
 

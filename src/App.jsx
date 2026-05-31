@@ -14,12 +14,6 @@ function App() {
     <>
     
     <div id="bg" className={toggled ? "light" : "dark"}> 
-        {/* <div className="annotations-layer">
-          <AnimatedBorder
-          id="l1"
-          label="haven't figured out this white thing yet"
-          />
-        </div> */}
           <Navbar 
             isOn={toggled}
             handleToggle={() => setToggled(!toggled)}
