@@ -11,14 +11,15 @@ function CarouselWidget() {
     <section className="section" id="portfolio-section">
       <div className="carousel-widget">
         {data.map((item, index) => 
-          <div className={ currentIndex === index ? 'block' : 'hidden'}>
-            <div key={"title_" + index}>
+          <div className={`widget-contents ${currentIndex === index ? 'block' : 'hidden'}`} key={"title_" + index}>
+       
               <div className="carousel-header">
                 <h2>{item.title}</h2>
               </div>
 
             <div className='carousel-col'>
               <div className='carousel-nav'>
+                
                   {data.map((item, index) => (
                     <a href="#" 
                     onClick={(e) => { e.preventDefault(); setCurrentIndex(index); }} 
@@ -27,7 +28,15 @@ function CarouselWidget() {
                     >
                     {item.title}
                     </a>
+
                   ))}
+                  
+                  <div className='tags'> 
+                    {item.tags.map((tag, i) => 
+                      <a className='tags-links' key={i}>{tag}</a>
+                    )}
+            
+                  </div>
 
                   <Button 
                   id="portfolio-link-buttons"
@@ -48,7 +57,7 @@ function CarouselWidget() {
                     
                 </div>
               </div>
-            </div>
+    
             </div>
           </div>
         )}

@@ -34,7 +34,7 @@ function Navbar({isOn, handleToggle}) {
             <a href="#" onClick={handleClick} className="nav" id="portfolio">[portfolio]</a>
         </div>
         <div className="header-col2">
-            <p id="date">{string}</p>
+            {/* <p id="date">{string}</p> */}
             <ToggleSwitch
                 isOn={isOn}
                 handleToggle={handleToggle}

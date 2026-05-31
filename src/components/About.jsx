@@ -38,7 +38,7 @@ function About() {
             </div>
         </div>
 
-        <span id="portfolio" class="material-symbols-outlined arrow-down" onClick={handleClick}>arrow_downward_alt</span>
+        <span id="portfolio" className="material-symbols-outlined arrow-down" onClick={handleClick}>arrow_downward_alt</span>
 
     </section>
   )
