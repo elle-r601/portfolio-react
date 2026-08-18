@@ -31,12 +31,12 @@ function CarouselWidget() {
 
                   ))}
                   
-                  <div className='tags'> 
+                  {/* <div className='tags'> 
                     {item.tags.map((tag, i) => 
                       <a className='tags-links' key={i}>{tag}</a>
                     )}
             
-                  </div>
+                  </div> */}
 
                   <Button 
                   id="portfolio-link-buttons"
