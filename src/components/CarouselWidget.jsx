@@ -38,11 +38,11 @@ function CarouselWidget() {
             
                   </div> */}
 
-                  <Button 
+                  {/* <Button 
                   id="portfolio-link-buttons"
                   label={item.title + " Demo"}
                   url={item.demo}
-                  />
+                  /> */}
               </div>
 
               <div className="carousel-content">

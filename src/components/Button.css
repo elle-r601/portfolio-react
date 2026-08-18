@@ -1,15 +1,16 @@
 .classic-button {
-  background: var(--light-blue);
+  background: #E0D4C2;
   box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 4px, rgba(0, 0, 0, 0.3) 7px 7px 13px -3px, rgba(0, 0, 0, 0.2) -3px -3px 0px inset;
   padding: 0.5rem 1rem;
   width: fit-content;
   border-radius: 8px;
   text-decoration: none;
-  font-family: "Silkscreen", sans-serif;
+  font-family: "Work Sans", sans-serif;
   transition: .3s ease;
   cursor: pointer;
   border: 1px solid var(--darker-blue);
   margin: auto;
+  font-weight: 600;
 
   a {
     color: black;

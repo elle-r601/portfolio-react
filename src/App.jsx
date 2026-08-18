@@ -8,6 +8,7 @@ import ToggleSwitch from './components/ToggleSwitch'
 import AnimatedBorder from './components/animatedBorder'
 import Title from './components/Title'
 import Navbar2 from './components/Navbar2'
+import About2 from './components/About2'
 
 function App() {
   const [toggled, setToggled] = useState(false);
@@ -22,7 +23,8 @@ function App() {
             /> */}
           <Title />
           <Navbar2 />
-          <About />
+          <About2 />
+          {/* <About /> */}
           <CarouselWidget />
     </div>
     </>

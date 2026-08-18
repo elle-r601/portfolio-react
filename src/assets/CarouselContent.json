@@ -8,10 +8,10 @@
   },
   {
     "title": "Honours Project",
-    "image": "",
+    "image": "/images/TheReception.png",
     "desc": "Work in progress",
     "demo": "",
-    "tags": ["Unity", "C#", "Pixel Art"]
+    "tags": ["Unity", "C#", "Game Development", "Literature Review", "Research", "UX/UI"]
   },
   {
     "title": "PacMan Clone",

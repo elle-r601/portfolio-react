@@ -182,3 +182,9 @@
 
   }
 }
+
+.about-widget-alt {
+  max-width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+}
