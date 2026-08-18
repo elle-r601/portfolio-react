@@ -75,9 +75,7 @@ h2 {
 .annotations-layer {
   position: absolute;
   z-index: 9999999;
-
 }
-
 
 html {
   min-height: 100%;

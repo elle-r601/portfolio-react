@@ -1,5 +1,7 @@
 import ToggleSwitch from "./ToggleSwitch";
 import { useState } from 'react'
+import { Link } from "react-router-dom";
+import Archive from './Archive'
 import "./Navbar.css"
 
 function Navbar({isOn, handleToggle}) {
@@ -32,13 +34,15 @@ function Navbar({isOn, handleToggle}) {
             </div>
             <a href="#" onClick={handleClick} className="nav" id="about">[about]</a>
             <a href="#" onClick={handleClick} className="nav" id="portfolio">[portfolio]</a>
+
+            <Link to="/Archive" className="nav">[archive]</Link>
+            
         </div>
         <div className="header-col2">
-            {/* <p id="date">{string}</p> */}
-            <ToggleSwitch
+            {/* <ToggleSwitch
                 isOn={isOn}
                 handleToggle={handleToggle}
-            />
+            /> */}
         </div>
         
     </div>

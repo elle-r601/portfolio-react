@@ -8,6 +8,7 @@ const ToggleSwitch = ({ isOn, handleToggle }) => {
     
   return (
      <>
+     <div className='light-switch'>
       <input
         checked={isOn}
         onChange={handleToggle}
@@ -21,6 +22,8 @@ const ToggleSwitch = ({ isOn, handleToggle }) => {
       >
         <span className={`switch-button`} />
       </label>
+     </div>
+      
     </>
   );
 };

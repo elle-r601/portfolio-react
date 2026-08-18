@@ -1,0 +1,10 @@
+#back-btn {
+  background: white;
+  width: fit-content;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  margin: 2rem;
+}
+
+.Archive {
+  min-height: 100vh;
+}
