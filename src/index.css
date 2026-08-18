@@ -62,6 +62,7 @@ h2 {
   margin: auto;
   transition: 1s ease;
   position: relative;
+  background: #87B9C4;
 }
 
 #bg.light {

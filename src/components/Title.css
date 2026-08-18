@@ -1,0 +1,28 @@
+
+.title-header {
+    padding: 1rem;
+}
+
+.title-widget {
+    margin-top: 10vh;
+}
+
+#title-icon {
+    position: relative;
+
+    .icon-1, .icon-2 {
+        transition: 0.2s ease-in-out;
+    }
+}
+
+#title-icon:hover { 
+    .icon-1{
+        opacity: 1;
+    }
+
+    .icon-2{
+        opacity: 0.5;
+        transform: translateX(5px);
+    }
+}
+

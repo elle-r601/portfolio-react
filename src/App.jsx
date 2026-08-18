@@ -6,6 +6,7 @@ import About from './components/About'
 import CarouselWidget from './components/CarouselWidget'
 import ToggleSwitch from './components/ToggleSwitch'
 import AnimatedBorder from './components/animatedBorder'
+import Title from './components/Title'
 
 function App() {
   const [toggled, setToggled] = useState(false);
@@ -13,11 +14,12 @@ function App() {
   return (
     <>
     
-    <div id="bg" className={toggled ? "light" : "dark"}> 
-          <Navbar 
+    <div id="bg" > 
+          {/* <Navbar 
             isOn={toggled}
             handleToggle={() => setToggled(!toggled)}
-            />
+            /> */}
+          <Title />
           <About />
           <CarouselWidget />
     </div>
