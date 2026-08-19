@@ -7,8 +7,20 @@
     margin-top: 10vh;
 }
 
+body.scrolled .title-header {
+    transform: translateX(0) scale(0.3);
+    left: 20px;
+    top: 20px;
+}
+
 #title-icon {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    transform-origin: top left;
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
 
     .icon-1, .icon-2 {
         transition: 0.2s ease-in-out;

@@ -3,6 +3,14 @@ import Button from './Button'
 import "./Title.css"
 
 function Title() {
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            document.body.classList.add("scrolled");
+        } else {
+            document.body.classList.remove("scrolled");
+        }
+    });
     
   return (
     <section className="section" id="title-section">
