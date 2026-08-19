@@ -9,6 +9,8 @@ import AnimatedBorder from './components/animatedBorder'
 import Title from './components/Title'
 import Navbar2 from './components/Navbar2'
 import About2 from './components/About2'
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
   const [toggled, setToggled] = useState(false);

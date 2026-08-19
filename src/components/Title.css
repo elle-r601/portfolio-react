@@ -1,26 +1,26 @@
 
 .title-header {
-    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
 }
 
 .title-widget {
-    margin-top: 10vh;
-}
-
-body.scrolled .title-header {
-    transform: translateX(0) scale(0.3);
-    left: 20px;
-    top: 20px;
+    margin-top: 20vh;
+    height: 50vh;
 }
 
 #title-icon {
-    position: fixed;
-    top: 0;
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%) scale(1);
-    transform-origin: top left;
-    transition: transform 0.3s ease-in-out;
-    z-index: 9999;
+    width: 80px;
+    height: auto;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 1em;
+    z-index: 1000;
 
     .icon-1, .icon-2 {
         transition: 0.2s ease-in-out;
@@ -37,4 +37,11 @@ body.scrolled .title-header {
         transform: translateX(5px);
     }
 }
+
+.content {
+    height: 70vh;
+    position: relative;
+    width: 100%;
+}
+
 
