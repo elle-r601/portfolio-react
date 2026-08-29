@@ -188,3 +188,73 @@
   margin: 2rem auto;
   padding: 2rem;
 }
+
+#about-me-para {
+  font-family: "Work Sans", sans-serif;
+  display: inline-block;
+  margin-bottom: 3rem;
+
+  #sub {
+    margin-left: 1rem;
+  }
+
+}
+
+#red-underline {
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  overflow: hidden;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-15px);}}%3C/style%3E%3Cpath fill='none' stroke='%237D2E42' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-size: auto 4px;
+  color: black;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+#heading {
+  font-weight: 600;
+  color: #7D2E42
+}
+
+#imp {
+  font-style: italic;
+  font-weight: 500;
+  color: #7D2E42
+}
+
+.work-widget {
+
+}
+
+.card-wrapper {
+  height: 70vh;
+  padding-top: 15vh;
+  position: relative;
+  width: 50vw;
+  margin: auto;
+}
+
+.card-wrapper:last-of-type {
+  height: 85vh; 
+  padding-bottom: 15vh;
+}
+
+.card-cont {
+  width: auto;
+  height: calc(70vh - 15vh); /* 55vh */
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.card-wrapper:last-of-type .card-cont {
+  height: calc(85vh - 30vh); 
+}

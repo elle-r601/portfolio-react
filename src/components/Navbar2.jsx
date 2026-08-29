@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <div className="header-alt">
         <div className="header-col1-alt">
-            <img src="/newIcon.svg" onClick={scrollTop} className="logo-img"/>
+            {/* <img src="/newIcon.svg" onClick={scrollTop} className="logo-img"/> */}
         </div>
         <div className="header-col2-alt">
             <a href="#" onClick={handleClick} className="nav" id="about">[about]</a>

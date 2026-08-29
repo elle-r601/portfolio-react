@@ -11,6 +11,8 @@ a.nav {
   font-weight: 800;
   display: inline-block;
   text-decoration: none;
+  z-index: 9999;
+  font-size: 1.2rem;
 
   &:hover {
     /* transform: scale(1.1); */
@@ -110,7 +112,7 @@ a.nav {
   position: sticky;
   top: 1rem;
   overflow: hidden;
-  z-index: 9999;
+  z-index: 100;
   background: none;
   display: flex;
   flex-direction: row;
@@ -120,6 +122,8 @@ a.nav {
   border-radius: 15px;
   width: 95%;
   margin: auto;
+  /* background: white;
+  opacity: 0.4; */
 
   .logo-img {
     width: 80px;
@@ -133,5 +137,6 @@ a.nav {
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+    z-index: 9999;
   }
 }

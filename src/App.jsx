@@ -9,11 +9,14 @@ import AnimatedBorder from './components/animatedBorder'
 import Title from './components/Title'
 import Navbar2 from './components/Navbar2'
 import About2 from './components/About2'
+import Work from './components/Work'
+import Card from './components/Card'
+import Spacer from './components/Spacer'
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
 function App() {
-  const [toggled, setToggled] = useState(false);
 
   return (
     <>
@@ -27,7 +30,9 @@ function App() {
           <Navbar2 />
           <About2 />
           {/* <About /> */}
-          <CarouselWidget />
+          <Spacer />
+          <Work />
+          {/* <Card/> */}
     </div>
     </>
   )

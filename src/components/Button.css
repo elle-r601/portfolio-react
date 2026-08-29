@@ -1,6 +1,6 @@
 .classic-button {
-  background: #E0D4C2;
-  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 4px, rgba(0, 0, 0, 0.3) 7px 7px 13px -3px, rgba(0, 0, 0, 0.2) -3px -3px 0px inset;
+  background: #7D2E42;
+  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 4px, rgba(0, 0, 0, 0.3) 7px 7px 13px -3px, rgba(0, 0, 0, 0.4) -3px -3px 0px inset;
   padding: 0.5rem 1rem;
   width: fit-content;
   border-radius: 8px;
@@ -8,18 +8,19 @@
   font-family: "Work Sans", sans-serif;
   transition: .3s ease;
   cursor: pointer;
-  border: 1px solid var(--darker-blue);
+  border: 2px solid black;
   margin: auto;
   font-weight: 600;
 
   a {
-    color: black;
+    color: white;
     text-decoration: none;
+    margin-right: 4px;
   }
 
   &:hover {
     
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(46, 36, 36, 0.15) 1.95px 1.95px 2.6px;
     transform: translateY(2px);
    
   }

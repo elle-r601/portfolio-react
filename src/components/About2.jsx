@@ -16,9 +16,15 @@ function About2() {
         <div className="about-widget-alt">
             <div className="about-me">
 
-                <p id="about-me-para">Hi! I'm Eleora Rizkalla, and I'm a fourth year computer science student specialising in <span className="emp">Interaction Design</span> and <span className="emp">Information Security</span>. 
-                    I am enthusiastic about web development, UX/UI, research and game design. 
-                </p>
+                <div id="about-me-para">
+                    <p>hi! i'm <span id="red-underline">Eleora</span> <span id="red-underline">Rizkalla</span>, it's nice to meet you!</p>
+                    <p id="heading">who am I?</p>
+                    <p id="sub">i'm a fourth year computer science student at UTS, majoring in <span id="imp">Interaction Design</span> and <span id="imp">Information Security</span></p>
+                    <p id="heading">what are my passions?</p>
+                    <p id="sub">i love web development, game design and game development. i love UX/UI design, but i prefer UX/UI research.</p>
+                    <p id="heading">what are my personal design likes?</p>
+                    <p id="sub">i like sans serif and monospaced fonts. i love lowercase text so much that i turned off auto caps lock on my iPhone and i think that emojis should only ever be used ironically.</p>
+                </div>
 
                 <div id="buttons">
                     <Button 

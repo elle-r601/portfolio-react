@@ -33,8 +33,7 @@ function Title() {
                 onEnter: () => {
                     // When animation completes, switch to fixed
                     titleIcon.current.style.position = "fixed";
-                    titleIcon.current.style.top = "3.5rem";
-                    titleIcon.current.style.transform = "translateX(-50%) translateY(-50%)";
+                    titleIcon.current.style.top = "2.8rem";
                 },
             
             });
