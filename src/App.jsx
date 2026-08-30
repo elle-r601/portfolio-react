@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import './App.css'
 import Navbar from './components/Navbar'
 import About from './components/About'
@@ -13,7 +11,9 @@ import Work from './components/Work'
 import Card from './components/Card'
 import Spacer from './components/Spacer'
 import gsap from 'gsap';
+import { useEffect, useState } from 'react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 
 
 function App() {
@@ -22,14 +22,10 @@ function App() {
     <>
     
     <div id="bg" > 
-          {/* <Navbar 
-            isOn={toggled}
-            handleToggle={() => setToggled(!toggled)}
-            /> */}
+        
           <Title />
           <Navbar2 />
           <About2 />
-          {/* <About /> */}
           <Spacer />
           <Work />
           {/* <Card/> */}
