@@ -238,7 +238,7 @@
 
 .card-cont {
   width: auto;
-  height: calc(90vh - 15vh); /* 55vh */
+  height: calc(90vh - 15vh); 
   margin: 0 auto;
   background: #fff;
   border-radius: 10px;

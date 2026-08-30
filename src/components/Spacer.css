@@ -3,7 +3,6 @@
   width:100%;
   min-height: 100vh;
   padding: 100px;
-  /* background: #000; */
 }
 
 .box2 h2 {
@@ -18,7 +17,6 @@
     display: flex;
     justify-content:center;
     align-items:center;
-    /* background:#000; */
 }
 
 body {

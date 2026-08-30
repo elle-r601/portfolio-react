@@ -14,7 +14,7 @@ function Spacer() {
           trigger: ".box2",
           start: "top center",
           end: "bottom center",
-          endTrigger: ".box2",
+          endTrigger: ".section-spacer",
           scrub: 1,
           pin:true,
           markers: true
@@ -24,7 +24,7 @@ function Spacer() {
         opacity: 0,
       }, 0)
       .from(".text4", {
-        y: 300,
+        y: 10,
         stagger : {
           amount : 0.6,
         },
