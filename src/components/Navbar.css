@@ -113,7 +113,7 @@ a.nav {
   top: 1rem;
   overflow: hidden;
   z-index: 100;
-  background: none;
+  background: #87B9C4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

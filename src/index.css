@@ -73,6 +73,10 @@ h2 {
   background: #1f2028;
 }
 
+/* #bg .card-content.disabled {
+  overflow: hidden;
+} */
+
 .annotations-layer {
   position: absolute;
   z-index: 9999999;
